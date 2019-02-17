@@ -2,6 +2,7 @@ body {
     display: flex;
     overflow: hidden;
     max-height: 100vh;
+    height: 100vh;
 }
 
 .menu {
