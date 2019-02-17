@@ -25,6 +25,6 @@ main {
     display: none;
 }
 
-.accordeon__body.active {
+.active .accordeon__body {
     display: block;
 }
