@@ -13,5 +13,18 @@ body {
 
 main {
     overflow: auto;
-    background: blue;
+    background: aqua;
+    flex-grow: 1;
+}
+
+.accordeon__head {
+    cursor: pointer;
+}
+
+.accordeon__body {
+    display: none;
+}
+
+.accordeon__body.active {
+    display: block;
 }
