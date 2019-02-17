@@ -3,11 +3,14 @@ window.addEventListener('DOMContentLoaded',
         const accordeons = document.querySelectorAll('.accordeon__head');
         // console.log(accordeons);
         accordeons.forEach(accordeon => {
-            accordeon.addEventListener('click', event => {
-                const isActive = accordeon.parentElement.classList.contains('active');
+            accordeon.addEventListener('click', () => {
+                // const isActive = accordeon.parentElement.classList.contains('active');
                 const active = document.querySelector('.accordeon.active');
-                active.classList.remove('active');
-                accordeon.parentElement.classList.add('active')
+                accordeon.parentElement.classList.toggle('active');
+                if (active) {
+                    active.classList.remove('active')
+                }
+                // active.classList.remove('active');
             })
         })
     });
