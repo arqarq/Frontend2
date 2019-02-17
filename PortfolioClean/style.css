@@ -17,14 +17,39 @@ main {
     flex-grow: 1;
 }
 
-.accordeon__head {
+.accordeon2__head, .accordeon__head {
     cursor: pointer;
 }
 
-.accordeon__body {
+.accordeon2__body, .accordeon__body {
     display: none;
 }
 
 .active .accordeon__body {
     display: block;
+}
+
+/*Pure CSS Active*/
+.accordeon2__checkbox:checked + .accordeon2__body {
+    display: block;
+}
+
+.accordeon2__checkbox {
+    display: none;
+    /*visibility: hidden;*/
+    /*height: 0;*/
+    /*width: 0;*/
+}
+
+.activities {
+    border: 2px solid red;
+    flex-basis: 200px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.activities__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
