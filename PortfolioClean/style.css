@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+.menu {
+    flex-basis: 300px;
+    flex-shrink: 0;
+    background: yellow;
+}
+
+main {
+    overflow: auto;
+    background: blue;
+}
